@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Comfort Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id = "blue-filter"></div>
+<div id = "brightness-overlay"></div>
+<body>
+    <!--Header-->
+    <header>
+        <h1>Eye Comfort Assistant</h1>
+        <p>Take care of your eyes while using screens</p>
+    </header>
+
+    <!--Main Container-->
+    <main>
+
+        <!--Blue Light Filter Section-->
+          <section class = "card">
+            <h2>Blue Light Filter</h2>
+            <button id = "bluelight-toggle">Toggle Filter</button>
+          </section>
+
+        <!--Brightness Control Section-->
+        <section class = "card">
+          <h2>Brightness Control</h2>
+          <input type="range" id = "brightness-slider" min = "10" max = "100" value = "100">
+        </section>  
+
+        <!---20-20-20-Timer Section-->
+        <section class = "card">
+            <h2>20-20-20 Rule Timer</h2>
+            <button id = "start-timer">Start Timer</button>
+            <button id = "stop-timer">Stop Timer</button>
+            <p id = "timer-display">20:00</p>
+        </section>
+
+        <!--Blink Reminder Section-->
+        <section class = "card">
+            <h2>Blink Reminder</h2>
+            <img src="assets/BlinkReminderAlert.gif" class = "reminder-gif" alt="Blink Alert Reminder">
+            <button id = "blink-btn">Enable Reminder</button>
+        </section>
+
+        <!--Session Time Section-->
+        <section class = "card">
+            <h2>Session Time</h2>
+            <p id = "session-time">00:00:00</p>
+        </section>
+
+        <!--Eye Exercise Section-->
+        <section class = "card">
+            <h2>Eye Exercises</h2>
+            <div class = "exercise-container">
+
+            <div class = "exercise-box">
+             <p>Blinking Exercise 1</p>
+             <img src="assets/BlinkEye.gif" class = "exercise-gif" alt="Blink Exercise 1">
+            </div>   
+            
+             <div class = "exercise-box">
+             <p>Blinking Exercise 2</p>
+             <img src="assets/BlinkEye2.gif" class = "exercise-gif" alt="Blink Exercise 2">
+            </div> 
+
+            <div class = "exercise-box">
+             <p>Eye Movement Exercise</p>
+             <img src="assets/MovingEyes.gif" class = "exercise-gif" alt="Movement Exercise">
+            </div> 
+
+            <div class = "exercise-box">
+             <p>Eye Rotation Exercise</p>
+             <img src="assets/RotatingEyes.gif" class = "exercise-gif" alt="Rotation Exercise">
+            </div> 
+   
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by Saurav Makeshwar</p>
+    </footer>
+    
+    <script src = "script.js"></script>
+    
+</body>
+</html>
